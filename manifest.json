@@ -1,0 +1,17 @@
+{
+  "name": "Spark Dating App",
+  "short_name": "Spark",
+  "start_url": "/spark-dating-app/",
+  "display": "standalone",
+  "background_color": "#0d0f14",
+  "theme_color": "#ff4d8d",
+  "description": "A simple dating app built with love.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/833/833472.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
