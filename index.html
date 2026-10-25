@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Spark Dating App</title>
   <link rel="stylesheet" href="style.css">
+  <!-- یہ لائن PWABuilder کے لیے شامل کی گئی ہے -->
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div class="app">
@@ -12,7 +14,6 @@
       <div class="logo"><span>♥</span> Spark</div>
       <div class="meta">
         <span id="matchCount">0 matches</span>
-        <!-- نیا تھیم بٹن -->
         <button id="themeToggle" class="theme-btn">🌙</button>
       </div>
     </header>
@@ -59,5 +60,11 @@
   </div>
 
   <script src="script.js"></script>
+  <!-- یہ سکرپٹ PWABuilder کے لیے شامل کی گئی ہے -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
