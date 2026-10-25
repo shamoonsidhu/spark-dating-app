@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Spark Dating App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo"><span>♥</span> Spark</div>
+      <div class="meta">
+        <span id="matchCount">0 matches</span>
+        <!-- نیا تھیم بٹن -->
+        <button id="themeToggle" class="theme-btn">🌙</button>
+      </div>
+    </header>
+
+    <main id="cardStack">
+      <div class="empty" id="empty">
+        <div>
+          <h3>You’re all caught up</h3>
+          <p>No more profiles in this demo.</p>
+          <button class="btn btnPrimary" onclick="resetDemo()">Reset deck</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="actions" id="actions">
+      <button class="action pass" id="passBtn">✕</button>
+      <button class="action like" id="likeBtn">♥</button>
+    </div>
+
+    <div class="chat" id="chatPanel">
+      <div class="chatHeader">
+        <div>
+          <strong id="chatName">Chat</strong>
+          <small>Matched just now</small>
+        </div>
+        <button class="chatClose" id="chatClose">✕</button>
+      </div>
+      <div id="messages"></div>
+      <form class="chatForm" id="chatForm">
+        <input id="chatInput" placeholder="Type a message..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="matchModal">
+    <div class="matchCard">
+      <div class="matchEmoji">💘</div>
+      <h2>It’s a match!</h2>
+      <p id="matchText">You and someone liked each other.</p>
+      <button class="btn btnPrimary" id="matchChatBtn">Send a message</button>
+      <button class="btn btnGhost" id="matchCloseBtn">Keep swiping</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
